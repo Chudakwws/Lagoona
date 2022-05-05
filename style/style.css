@@ -1,0 +1,124 @@
+
+@font-face {
+    font-family: 'Muller';
+    src: local('Muller Medium'), local('MullerMedium'),
+        url('../fonts/MullerMedium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: local('Muller Regular'), local('MullerRegular'),
+        url('../fonts/MullerRegular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: local('Muller Bold'), local('MullerBold'),
+        url('../fonts/MullerBold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+:root {
+    --yellow: #CC9933;
+    --dark-yellow: #A47312;
+    --hover-yellow: #E9C379;
+}
+
+html
+{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after
+{
+    box-sizing: inherit;
+}
+
+body
+{   
+    margin: 0;
+    font-family: 'Muller', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 32px;
+    color: #333;
+    background: #E5E5E5;
+}
+
+.visually-hidden
+{
+    position: absolute !important;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px 1px 1px 1px);
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+.clearfix::after
+{
+    display: table;
+    clear: both;
+    content: '';
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.btn {
+    padding: 13px 20px;
+    border: 1px solid var(--yellow);
+    background-color: transparent;
+    border-radius: 10px;
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: var(--yellow);
+    outline: none;
+    color: #fff;
+}
+
+.btn:active {
+    background-color: var(--dark-yellow);
+    outline: none;
+    color: #fff;
+}
+
+.title {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 400;
+    margin: 0;
+    padding-left: 40px;
+}
+
+h3 {
+    margin: 0;
+}

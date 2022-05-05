@@ -1,0 +1,102 @@
+.footer {
+    position: relative;
+    display: flex;
+    padding: 44px 51px 46px 52px;
+    background-color: #333333;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.footer_copyright {
+    width: 320px;
+    margin-right: 102px;
+}
+
+.copyright_descr {
+    color: #fff;
+    line-height: 30.4px;
+    margin: 0 0 49px 0;
+}
+
+.footer_contacts {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    margin-right: 260px;
+    font-style: normal;
+}
+
+.footer_address {
+    margin: 0 0 15px 0;
+    color: #fff;
+}
+
+.phone_wrapper__footer,
+.email_wrapper__footer {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.addres_phone__footer:active,
+.addres_email__footer:active,
+.copyright_link:active {
+    color: var(--dark-yellow);
+    transition: color 0.3s ease;
+}
+
+.addres_phone__footer:hover,
+.addres_email__footer:hover,
+.copyright_link:hover {
+    color: var(--hover-yellow);
+    transition: color 0.3s ease;
+}
+
+.addres_phone__footer:focus,
+.addres_email__footer:focus,
+.copyright_link:focus {
+    outline: 1px solid var(--yellow);
+    outline-offset: 5px;
+    transition: all 0.3s ease;
+}
+
+.phone_wrapper__footer {
+    margin: 0 0 15px 0;
+}
+
+
+.footer_logo {
+    position: absolute;
+    bottom: -11px;
+    right: 153px;
+}
+
+.social_list {
+    display: flex;
+    flex-direction: column;
+}
+
+.social_item {
+    margin-bottom: 20px;
+}
+
+.social_link {
+    display: block;
+    width: 25px;
+    height: 25px;
+}
+
+.social_link:hover path{
+    fill: var(--yellow);
+    transition: fill 0.3s ease;
+}
+
+.social_link:focus path{
+    fill: var(--yellow);
+    transition: fill 0.3s ease;
+}
+
+.social_link:active path{
+    fill: var(--dark-yellow);
+    transition: fill 0.3s ease;
+}
